@@ -103,4 +103,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or suggestions, please reach out through the contact form on the website or email me at your.email@example.com.
+For any questions or suggestions, please reach out through the contact form on the website or email me at tgatifzafar@gmail.com.
