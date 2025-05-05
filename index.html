@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atif Zafar - Frontend Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">AZ</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text">Atif Zafar</h1>
+            <p class="tagline">Frontend Developer | JavaScript | GSAP | Three.js</p>
+        </div>
+        <div id="cube-container"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate frontend developer specializing in creating immersive web experiences through JavaScript, animations, and 3D graphics. With expertise in modern web technologies, I bring creative visions to life through clean, efficient code and stunning visual effects.</p>
+                    <div class="skills">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">GSAP</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">HTML5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>3D Portfolio</h3>
+                        <p>Interactive 3D portfolio built with Three.js and GSAP animations.</p>
+                        <div class="project-tags">
+                            <span>Three.js</span>
+                            <span>GSAP</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Modern e-commerce platform with smooth animations and transitions.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                            <span>HTML5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Dashboard</h3>
+                        <p>Data visualization dashboard with real-time updates and animations.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Atif Zafar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cube.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 
