@@ -477,6 +477,26 @@ body {
     color: var(--primary-color);
 }
 
+.project-links {
+    margin-top: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: var(--background-dark);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--neon-glow);
+}
+
 /* Contact Section */
 .contact {
     padding: 100px 0;
@@ -835,4 +855,53 @@ body {
                      0 0 20px rgba(0, 255, 136, 0.3),
                      0 0 30px rgba(0, 255, 136, 0.1);
     }
+}
+
+/* Project Type Toggle */
+.project-type-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.toggle-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--background-light);
+    border: 1px solid var(--primary-color);
+    color: var(--text-primary);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+}
+
+.toggle-btn:hover {
+    background: rgba(0, 255, 136, 0.1);
+    transform: translateY(-2px);
+}
+
+.toggle-btn.active {
+    background: var(--primary-color);
+    color: var(--background-dark);
+    box-shadow: var(--neon-glow);
+}
+
+/* Project Card Visibility */
+.project-card {
+    display: none;
+}
+
+.project-card.major {
+    display: block;
+}
+
+/* When minor projects are active */
+.minor-active .project-card.major {
+    display: none;
+}
+
+.minor-active .project-card.minor {
+    display: block;
 } 

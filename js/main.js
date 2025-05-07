@@ -4,6 +4,7 @@ class Portfolio {
         this.initFormHandling();
         this.initScrollProgress();
         this.initCursorEffect();
+        this.initProjectToggle();
     }
 
     initFormHandling() {
@@ -81,6 +82,37 @@ class Portfolio {
 
         // Hide default cursor
         document.body.style.cursor = 'none';
+    }
+
+    initProjectToggle() {
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+        const projectGrid = document.querySelector('.project-grid');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                toggleButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Toggle project visibility
+                if (button.dataset.type === 'minor') {
+                    projectGrid.classList.add('minor-active');
+                } else {
+                    projectGrid.classList.remove('minor-active');
+                }
+
+                // Trigger GSAP animation for visible projects
+                gsap.from('.project-card:not([style*="display: none"])', {
+                    opacity: 0,
+                    y: 50,
+                    duration: 0.8,
+                    stagger: 0.2,
+                    ease: 'power3.out'
+                });
+            });
+        });
     }
 
     showNotification(message, type) {
